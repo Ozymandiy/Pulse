@@ -1,7 +1,11 @@
 @media (max-width: 1200px)
+	.first-section
+		background-position: 25% 75%
 	h1
-		font-size: 42px
+		font-size: 40px
 @media (max-width: 991px)
+	.wrapper
+		padding: 0 30px
 	h1
 		font-size: 28px
 		line-height: 28px
@@ -33,13 +37,24 @@
 			width: 246px
 			height: 43px
 			font-size: 15px
+	.second__item-wrapper
+		width: 231px
+		padding: 15px 5px 0
+		p
+			font-size: 13px
+			line-height: 17px
+	.title
+		font-size: 28px
+		line-height: 28px
 @media (max-width: 767px)
+	.first-section
+		background-position: 20% center
 	.header
 		&__info
 			display: none
 	h1
-		font-size: 19px
-		line-height: 19px
+		font-size: 22px
+		line-height: 22px
 	h2
 		font-size: 16px
 		line-height: 16px
@@ -65,7 +80,32 @@
 				display: block
 				margin: 0 auto
 				margin-bottom: 20px
+	.second__wrapper
+		justify-content: center
+		width: 240px
+		padding: 0 10px
+		margin: 30px auto 0
+		p
+			font-size: 14px
+			line-height: 18px
+	.title
+		font-size: 22px
+		line-height: 22px
+	.second-section
+		padding: 40px 0
+	.third-section
+		padding: 40px 0 0
+		min-height: 530px
+		.wrapper
+			text-align: center
+		.title_left
+			text-align: center
+			padding: 0 5px
+		.back-form
+			margin: 26px auto 0
 @media (max-width: 575px)
+	.first-section
+		background-position: 20%
 	.header
 		flex-direction: column
 		justify-content: center
@@ -73,6 +113,7 @@
 			margin-bottom: 20px
 	.wrapper
 		width: 100%
+		padding: 0
 	.first
 		&__wrapper
 			align-items: center
@@ -80,3 +121,11 @@
 	h1
 		font-size: 20px
 		text-align: center
+	.title
+		font-size: 19px
+		line-height: 19px
+	.third-section
+		.back-form
+			margin: 26px auto 0
+			input
+			padding: 0 5px
