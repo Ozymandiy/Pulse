@@ -62,8 +62,8 @@ $(document).ready(function() {
   });
 
 	// **********  Rotate item to describe and back
-	function toggleSlide(itemClass) {
-		$(itemClass).each(function(i) {
+	function toggleSlide(item) {
+		$(item).each(function(i) {
 			$(this).on('click', function(e) {
 				e.preventDefault();
 				$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
@@ -74,4 +74,41 @@ $(document).ready(function() {
 
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
+
+	//Progress line on the top of the document
+	$(function() {
+		$("body").prognroll({
+			height: 5,
+    	color: "#c70101"
+		});
+	});
+
+	//Modal windows
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay, #consultation').fadeIn();
+	});
+
+	$('.modalwin__close').on('click', function() {
+		$('.overlay, #consultation, #order, #thanks').fadeOut();
+	});
+
+	$('.button_mini').each(function(i) {
+		$(this).on('click', function() {
+			$('#order .modalwin__descr').text($('.catalog-item__sub').eq(i).text());
+			$('.overlay, #order').fadeIn();
+		});
+	});
 });
+
+	const arrowOnTop = document.querySelector('.on-top');
+	window.addEventListener('scroll', () => {
+		document.documentElement.scrollTop > 300 ? arrowOnTop.style.visibility = "visible" : arrowOnTop.style.visibility = "hidden";
+	});
+
+	arrowOnTop.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		})
+	});
