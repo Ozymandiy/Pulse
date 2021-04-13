@@ -30,8 +30,10 @@ gulp.task('styles', function() {
 // JS
 gulp.task('scripts', function() {
 	return gulp.src([
-		'src/libs/bootstrap/js/bootstrap.bundle.min.js',
+		'src/libs/bootstrap/js/bootstrap.min.js',
 		'src/libs/jQuery/jquery-3.6.0.min.js',
+		'src/libs/jquery-validation/jquery.validate.min.js',
+		'src/libs/maskedinput/jquery.maskedinput.min.js',
 		'src/libs/fontawesome/js/all.min.js',
 		'src/libs/slick/slick.min.js',
 		'src/libs/prognroll/prognroll.js',

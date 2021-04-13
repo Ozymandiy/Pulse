@@ -46,6 +46,16 @@
 	.title
 		font-size: 28px
 		line-height: 28px
+	.catalog
+		padding-bottom: 50px
+		&__tabs
+			margin-top: 50px
+		&__tab
+			width: calc(25%)
+		&__content
+			margin-top: 50px
+			justify-content: center
+			flex-wrap: wrap
 @media (max-width: 767px)
 	.first-section
 		background-position: 20% center
@@ -103,6 +113,27 @@
 			padding: 0 5px
 		.back-form
 			margin: 26px auto 0
+	.feed
+		text-align: center
+		&__wrapper
+			margin-top: 50px
+			display: flex
+			flex-direction: column
+			align-items: center
+			&_descr
+				margin-top: 20px
+				padding: 0 20px
+				display: flex
+				flex-direction: column
+				align-items: center
+	.catalog
+		padding-bottom: 50px
+		&__tabs
+			flex-direction: column
+			margin-top: 30px
+		&__tab
+			width: calc(45%)
+			margin: 8px 5px
 @media (max-width: 575px)
 	.first-section
 		background-position: 20%
@@ -129,3 +160,16 @@
 			margin: 26px auto 0
 			input
 			padding: 0 5px
+	.modalwin
+		width: 300px
+	.back-form
+		&_mt25
+			margin: 25px auto 0
+			width: 280px
+	.feed
+		&__wrapper
+			&_descr
+				padding: 0 20px
+	.catalog
+		&__tab
+			width: 300px
