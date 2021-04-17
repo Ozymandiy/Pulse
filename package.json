@@ -15,8 +15,10 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "npm": "^7.10.0"
   },
   "browserslist": [
     "last 1 version",
@@ -25,6 +27,6 @@
     "not dead"
   ],
   "dependencies": {
-    "npm": "^7.6.1"
+    "gulp-htmlmin": "^5.0.1"
   }
 }

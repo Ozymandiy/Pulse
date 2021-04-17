@@ -128,6 +128,11 @@ $(document).ready(function() {
 	// form sending
 	$("form").submit(function(e) {
 		e.preventDefault();
+
+		if(!$(this).valid()) {
+			return;
+		}
+		
 		$.ajax({
 			type: "POST",
 			url: "mailer/smart.php",
@@ -141,6 +146,8 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+
+	new WOW().init();
 
 }); // the end document.ready
 
